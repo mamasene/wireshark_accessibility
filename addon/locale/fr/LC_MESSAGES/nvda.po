@@ -1,0 +1,202 @@
+# French translations for 'wiresharkAccessibility' package
+# Traductions françaises du paquet 'wiresharkAccessibility'.
+# Copyright (C) 2026 THE 'wiresharkAccessibility''S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'wiresharkAccessibility' package.
+# Mama Sene <tech.access33@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'wiresharkAccessibility' '1.0.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-10-17 00:48+0200\n"
+"PO-Revision-Date: 2026-10-17 00:48+0200\n"
+"Last-Translator: Mama Sene <tech.access33@gmail.com>\n"
+"Language-Team: French <nvda-translations@groups.io>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. La colonne du focus contient le numéro du paquet. On le
+#. qualifie pour que l'annonce commence par un mot plutôt que
+#. par un chiffre nu ; le test évite de mal nommer une colonne
+#. dont l'utilisateur aurait changé l'ordre.
+#. Translators: %s is the packet number in the packet list.
+#: addon\appModules\wireshark.py:391
+#, python-format
+msgid "frame %s"
+msgstr "trame %s"
+
+
+#. Translators: description of the capture start/stop command.
+#: addon\appModules\wireshark.py:840
+msgid "Start or stop the capture, and report the new state"
+msgstr "Démarre ou arrête la capture, et annonce le nouvel état"
+
+
+#. Translators: reported when a capture has started.
+#: addon\appModules\wireshark.py:927
+msgid "Capture started"
+msgstr "Démarrage de la capture"
+
+
+#. Translators: reported when a capture has stopped.
+#: addon\appModules\wireshark.py:930
+msgid "Capture stopped"
+msgstr "Capture arrêtée"
+
+
+#. Translators: description of the command reporting the capture state.
+#: addon\appModules\wireshark.py:934
+msgid "Report whether a capture is running"
+msgstr "Annonce si une capture est en cours"
+
+
+#. Translators: reported when Wireshark does not expose the capture state.
+#: addon\appModules\wireshark.py:942
+msgid "Capture state unavailable"
+msgstr "État de la capture indisponible"
+
+
+#. Translators: reported when a capture is currently running.
+#: addon\appModules\wireshark.py:946
+msgid "Capture running"
+msgstr "Capture en cours"
+
+
+#. Translators: description of the row reading command.
+#: addon\appModules\wireshark.py:954
+msgid "Read the current row column by column"
+msgstr "Lit la ligne courante colonne par colonne"
+
+
+#. Translators: reported when the command is used outside a list with columns.
+#: addon\appModules\wireshark.py:968
+msgid "This command works in a list with columns"
+msgstr "Cette commande s'utilise dans une liste en colonnes"
+
+
+#. Translators: reported when the row holds no readable data.
+#: addon\appModules\wireshark.py:977
+msgid "No readable data on this row"
+msgstr "Aucune donnée lisible sur cette ligne"
+
+
+#. Translators: description of a diagnostic command.
+#: addon\appModules\wireshark.py:983
+msgid "Log the state of the Wireshark commands"
+msgstr "Relève dans le journal l'état des commandes de Wireshark"
+
+
+#. Translators: reported when the Wireshark window cannot be found.
+#: addon\appModules\wireshark.py:991
+msgid "Wireshark window not found"
+msgstr "Fenêtre de Wireshark introuvable"
+
+
+#. Translators: confirms that the report has been written to the log.
+#: addon\appModules\wireshark.py:1006
+msgid "Command report written to the log"
+msgstr "Relevé des commandes écrit dans le journal"
+
+
+#. Translators: description of a diagnostic command.
+#: addon\appModules\wireshark.py:1010
+msgid "Log the accessibility information of the focused object"
+msgstr "Journalise les informations d'accessibilité de l'objet ayant le focus"
+
+
+#. Translators: confirms that the report has been written to the log.
+#: addon\appModules\wireshark.py:1016
+msgid "Focus report written to the log"
+msgstr "Relevé du focus écrit dans le journal"
+
+
+#. Translators: description of a diagnostic command.
+#: addon\appModules\wireshark.py:1020
+msgid "Log the accessibility information of the navigator object"
+msgstr "Journalise les informations d'accessibilité de l'objet navigateur"
+
+
+#. Translators: confirms that the report has been written to the log.
+#: addon\appModules\wireshark.py:1026
+msgid "Navigator object report written to the log"
+msgstr "Relevé de l'objet navigateur écrit dans le journal"
+
+
+#. Translators: description of a diagnostic command.
+#: addon\appModules\wireshark.py:1030
+msgid "Toggle logging of accessibility events"
+msgstr "Active ou désactive la journalisation des événements d'accessibilité"
+
+
+#. Translators: reported when event logging has been enabled.
+#: addon\appModules\wireshark.py:1037
+msgid "Event logging enabled"
+msgstr "Journalisation des événements activée"
+
+
+#. Translators: reported when event logging has been disabled.
+#: addon\appModules\wireshark.py:1040
+msgid "Event logging disabled"
+msgstr "Journalisation des événements désactivée"
+
+
+#. Translators: user visible name of the add-on.
+#: buildVars.py:17
+msgid "Wireshark Accessibility"
+msgstr "Accessibilité de Wireshark"
+
+
+#. Translators: long description of the add-on.
+#: buildVars.py:19
+msgid ""
+"Makes the Wireshark graphical interface usable with a screen reader.\n"
+"Wireshark splits every row of its interface and packet lists into one cell "
+"per\n"
+"column, and puts focus on a cell holding no useful text: rows are now "
+"announced\n"
+"with their real content and their position in the list. Buttons with no\n"
+"accessible name are announced using their tooltip, and the links of the "
+"welcome\n"
+"page, previously silent, are announced. Ctrl+E reports the start and the "
+"stop of\n"
+"a capture, which Wireshark signals by no accessibility event at all.\n"
+"Capture data is never written to the NVDA log."
+msgstr ""
+"Rend l'interface graphique de Wireshark utilisable au lecteur d'écran.\n"
+"Wireshark découpe chaque ligne de sa liste d'interfaces et de sa liste de\n"
+"paquets en une cellule par colonne, et pose le focus sur une cellule sans texte\n"
+"utile : les lignes sont désormais annoncées avec leur contenu réel et leur\n"
+"position dans la liste. Les boutons sans nom accessible sont annoncés grâce à\n"
+"leur infobulle, et les liens de la page d'accueil, jusqu'ici muets, sont\n"
+"annoncés.\n"
+"Ctrl+E annonce le démarrage et l'arrêt de la capture, que Wireshark ne signale\n"
+"par aucun événement d'accessibilité.\n"
+"Aucune donnée de capture n'est écrite dans le journal de NVDA."
+
+
+#. Translators: what's new in this version.
+#: buildVars.py:29
+msgid ""
+"First release.\n"
+"The capture interface list and the packet list are announced with their\n"
+"content and their position. Buttons without an accessible name use their\n"
+"tooltip. The links on the welcome page are announced. Ctrl+E reports the "
+"start\n"
+"and the stop of a capture. Meaningless row and column numbers are no longer\n"
+"announced in single column trees, such as the packet detail tree.\n"
+"Diagnostic recordings redact capture data, and the diagnostic commands have "
+"no\n"
+"shortcut assigned by default."
+msgstr ""
+"Première version.\n"
+"La liste des interfaces de capture et la liste des paquets sont annoncées avec\n"
+"leur contenu et leur position. Les boutons sans nom accessible utilisent leur\n"
+"infobulle. Les liens de la page d'accueil sont annoncés. Ctrl+E annonce le\n"
+"démarrage et l'arrêt de la capture. Les numéros de ligne et de colonne\n"
+"dépourvus de sens ne sont plus annoncés dans les arborescences à une seule\n"
+"colonne, dont celle des détails du paquet.\n"
+"Les relevés de diagnostic masquent les données de capture, et les commandes de\n"
+"diagnostic n'ont aucun raccourci attribué par défaut."

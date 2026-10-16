@@ -1,0 +1,21 @@
+*.pyc
+__pycache__/
+.sconsign.dblite
+*.nvda-addon
+*.mo
+addon/doc/*/*.html
+addon/manifest.ini
+addon/locale/*/manifest.ini
+build/
+dist/
+.venv/
+.ruff_cache/
+
+# Documentation anglaise : générée par SCons depuis readme.md à la racine.
+addon/doc/en/
+
+# Modèle de traduction : régénéré par « scons pot ».
+*.pot
+
+# Feuille de style de la documentation : copiée par SCons depuis style.css.
+addon/doc/style.css

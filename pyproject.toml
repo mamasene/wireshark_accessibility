@@ -1,0 +1,30 @@
+# Configuration des outils de qualité du code.
+# Les conventions suivent celles du dépôt NVDA : tabulations, lignes longues tolérées.
+
+[tool.ruff]
+line-length = 110
+indent-width = 4
+target-version = "py311"
+builtins = ["_", "ngettext", "npgettext", "pgettext"]
+exclude = [".git", "site_scons", "build", "dist"]
+
+[tool.ruff.format]
+indent-style = "tab"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = [
+	# NVDA utilise le camelCase et des indentations par tabulation.
+	"W191",
+	"E101",
+]
+
+[tool.pyright]
+include = ["addon", "buildVars.py"]
+exclude = ["site_scons", "build", "dist"]
+# Le dépôt source de NVDA fournit l'autocomplétion : décommenter après clonage.
+# extraPaths = ["../nvda/source"]
+pythonVersion = "3.11"
+typeCheckingMode = "basic"
+reportMissingImports = "warning"
+reportUndefinedVariable = "warning"
