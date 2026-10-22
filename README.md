@@ -1,7 +1,6 @@
 # Wireshark Accessibility
 
-An NVDA add-on that makes the Wireshark graphical interface usable with a
-screen reader on Windows.
+An NVDA add-on that makes the Wireshark graphical interface usable on Windows.
 
 * Authors: Mama Sene, Emmanuel
 * License: [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)

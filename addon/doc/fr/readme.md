@@ -1,7 +1,7 @@
 # Accessibilité de Wireshark
 
-Extension NVDA qui rend l'interface graphique de Wireshark utilisable au
-lecteur d'écran, sous Windows.
+Extension NVDA qui rend l'interface graphique de Wireshark utilisable, sous
+Windows.
 
 * Auteurs : Mama Sene, Emmanuel
 * Licence : [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)

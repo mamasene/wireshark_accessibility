@@ -16,7 +16,7 @@ addon_info = AddonInfo(
 	# Translators: user visible name of the add-on.
 	addon_summary=_("Wireshark Accessibility"),
 	# Translators: long description of the add-on.
-	addon_description=_("""Makes the Wireshark graphical interface usable with a screen reader.
+	addon_description=_("""Makes the Wireshark graphical interface usable with NVDA.
 Wireshark splits every row of its interface and packet lists into one cell per
 column, and puts focus on a cell holding no useful text: rows are now announced
 with their real content and their position in the list. Buttons with no
