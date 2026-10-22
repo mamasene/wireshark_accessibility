@@ -35,11 +35,11 @@ announced in single column trees, such as the packet detail tree.
 Diagnostic recordings redact capture data, and the diagnostic commands have no
 shortcut assigned by default."""),
 	addon_author="Mama Sene <tech.access33@gmail.com>",
-	# À renseigner avant soumission au magasin : le champ sourceURL de la
-	# soumission est obligatoire, et la page d'accueil doit correspondre à ce
-	# champ url. Les deux doivent commencer par https://.
-	addon_url=None,
-	addon_sourceURL=None,
+	# Le champ sourceURL de la soumission au magasin est obligatoire, et la page
+	# d'accueil déclarée dans le formulaire doit correspondre exactement à ce
+	# champ url, lu dans le manifeste du paquet téléchargé.
+	addon_url="https://github.com/mamasene/wireshark_accessibility",
+	addon_sourceURL="https://github.com/mamasene/wireshark_accessibility",
 	addon_docFileName="readme.html",
 	# Versions d'API de NVDA. minimumNVDAVersion doit rester inférieure ou égale
 	# à lastTestedNVDAVersion, et toutes deux doivent exister dans la liste des
