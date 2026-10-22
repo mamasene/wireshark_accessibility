@@ -4,7 +4,7 @@ An NVDA add-on that makes the Wireshark graphical interface usable on Windows.
 
 * Authors: Mama Sene, Emmanuel
 * License: [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-* Requires NVDA 2024.1 or later; last tested with NVDA 2026.1
+* Requires NVDA 2026.1 or later; last tested with NVDA 2026.2
 * Developed against Wireshark 4.6.8 on Windows 11
 
 ## Why this add-on exists

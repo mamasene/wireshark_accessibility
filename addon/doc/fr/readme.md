@@ -5,7 +5,7 @@ Windows.
 
 * Auteurs : Mama Sene, Emmanuel
 * Licence : [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-* Nécessite NVDA 2024.1 ou ultérieur ; dernière version testée : NVDA 2026.1
+* Nécessite NVDA 2026.1 ou ultérieur ; dernière version testée : NVDA 2026.2
 * Développée avec Wireshark 4.6.8 sous Windows 11
 
 ## Pourquoi cette extension

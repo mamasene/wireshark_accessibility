@@ -43,9 +43,17 @@ shortcut assigned by default."""),
 	addon_docFileName="readme.html",
 	# Versions d'API de NVDA. minimumNVDAVersion doit rester inférieure ou égale
 	# à lastTestedNVDAVersion, et toutes deux doivent exister dans la liste des
-	# versions d'API du magasin.
-	addon_minimumNVDAVersion="2024.1",
-	addon_lastTestedNVDAVersion="2026.1",
+	# versions d'API du magasin — chaque version de NVDA en est une, CURRENT
+	# valant le numéro de version lui-même.
+	#
+	# Testée sur 2026.2. Le minimum est à 2026.1 parce que 2026.1 et 2026.2
+	# déclarent le même BACK_COMPAT_TO, 2026.1 : elles partagent donc la même
+	# génération d'API d'extensions, et ce qui fonctionne sur l'une fonctionne
+	# sur l'autre par contrat. En dessous, c'est une autre génération d'API, que
+	# nous n'avons pas vérifiée — et NVDA 2026.x refuse de toute façon les
+	# extensions dont lastTested est antérieur à 2026.1.
+	addon_minimumNVDAVersion="2026.1",
+	addon_lastTestedNVDAVersion="2026.2",
 	addon_updateChannel=None,
 	addon_license="GPL v2",
 	addon_licenseURL="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
